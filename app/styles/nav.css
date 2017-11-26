@@ -1,0 +1,40 @@
+.nav-menu {
+  box-sizing: border-box;
+}
+
+.nav-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-heading {
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+
+.nav-item, .nav-heading {
+  display: block;
+  position: relative;
+  margin: 0px;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--main-fg-color);
+}
+
+.nav-item {
+  padding: 0px;
+}
+
+.nav-item:hover {
+  background-color: var(--main-highlight-color);
+}
+
+.nav-link {
+  width: inherit;
+  height: inherit;
+  display: block;
+  color: var(--main-fg-color);
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+<div class="seven"></div>
+<div class="eight"></div>
+<div class="nine"></div>
+<div class="four"></div>
+<div class="five">
+  <div class="grid-todo-listing">
+    <!-- <div class="grid-todo-listing-control">
+      <button {{action 'addItem'}}>{{fa-icon "plus"}}</button>
+    </div> -->
+    {{todo-list-control addItem=(action "addItem")}}
+    <div class="grid-todo-listing-list">
+      {{#each model as |todoItem|}}
+        {{todo-list-item todo=todoItem removeItem=(action "removeItem")}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+<div class="six"></div>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+
+
+<!-- <div class="grid-todo">
+  <div class="grid-todo-listing">
+    <div class="grid-todo-listing-control">
+      <button {{action 'addItem'}}>{{fa-icon "plus"}}</button>
+      {{#each results as |todo|}}
+        <span>{{todo.id}}</span>
+      {{/each}}
+    </div>
+    <div class="grid-todo-listing-list">
+      {{#each model as |todoItem|}}
+        {{todo-list-item todo=todoItem removeItem=(action "removeItem")}}
+      {{/each}}
+    </div>
+  </div>
+  <div>
+    Detail
+  </div>
+</div> -->
